@@ -5,7 +5,7 @@ var stepResultHooks = function() {
 	this.StepResult(function (event, callBack) {
 		var stepResult = event.getPayloadItem('stepResult'), step = stepResult.getStep();
 
-		if (stepResult.isFailed()) {
+		if (stepResult.isFailed) {
 			browser.takeScreenshot().then(function (png) {
 				var stream, fname;
 

@@ -95,11 +95,11 @@ config = {
     // ---------------------------------------------------------------------------
     
     // set to "custom" instead of cucumber.
-    framework: 'custom',
+	framework: 'custom',
 
-    // path relative to the current config file
-    frameworkPath: require.resolve('protractor-cucumber-framework')
-  
+	// path relative to the current config file
+	frameworkPath: require.resolve('protractor-cucumber-framework'),
+	
     cucumberOpts: {
         require: 'features/**/*.js',
         tags: [
